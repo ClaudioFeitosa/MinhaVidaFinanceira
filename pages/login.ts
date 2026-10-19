@@ -10,8 +10,12 @@ export class LoginPage  {
     readonly ContinuarComGoogleBtn : Locator;
     readonly emailInput: Locator;
     readonly senhaInput: Locator;
-    readonly EntrarnacontaBtn: Locator
-    
+    readonly EntrarnacontaBtn: Locator;
+    readonly credenciasInvalidas : Locator;
+    readonly EntrarText : Locator;
+    readonly EntrarTextAux : Locator;
+    readonly emailLabel : Locator;
+    readonly senhaLabel: Locator;   
 
 
       constructor(page : Page) {
@@ -48,6 +52,26 @@ export class LoginPage  {
 
         this.senhaInput = page.getByPlaceholder('••••••••')
 
+        this.credenciasInvalidas = page
+            .getByText('E-mail ou senha incorretos. Verifique suas credenciais.')
+
+        this.EntrarText = page
+            .getByText('Entrar', {
+                exact:true
+            })
+        
+        this.EntrarTextAux = page
+            .getByText('Acesse sua conta para continuar.', {
+                exact:true
+            })
+
+        this.emailLabel = page.locator('label', {
+                hasText:'E-mail'
+        })
+
+        this.senhaLabel = page.locator('label', {
+                hasText:'Senha'
+        })
     }
 
     async preencherEmailInput(email: string) {

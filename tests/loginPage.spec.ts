@@ -5,7 +5,25 @@ import { GoogleAuthPage } from '../pages/googleAuthPage';
 import 'dotenv/config';
 import process from 'node:process';
 
-test.describe('Landigng ', () => {
+function obterVariavelAmbiente(nome: string): string {
+    const valor = process.env[nome];
+
+    if (!valor) {
+        throw new Error(
+            `A variável de ambiente ${nome} não foi definida.`
+        );
+    }
+
+    return valor;
+}
+
+
+const Email = obterVariavelAmbiente('valid_USER_EMAIL');
+const password = obterVariavelAmbiente('Valid_USER_PASSWORD');
+const Emailinvalido = obterVariavelAmbiente('invalid_USER_EMAIL');
+const passwordinvalido = obterVariavelAmbiente('inValid_USER_PASSWORD');   
+
+test.describe('Login Page Validação das iterações - botões e logar ', () => {
     let loginPage:LoginPage;
     let landingPage:LandingPage;
     let googleAuthPage:GoogleAuthPage;
@@ -27,10 +45,8 @@ test.describe('Landigng ', () => {
 
         test('Validar click no botão voltar', async({page}) =>{
             await loginPage.voltarBtn.click()
-            await expect(landingPage.entrarButton).toBeVisible()            
-
+            await expect(landingPage.entrarButton).toBeVisible() 
         })
-        
     })
     
     test.describe('Loging Google ', () => {
@@ -58,17 +74,27 @@ test.describe('Landigng ', () => {
     })
     
     test.describe('Login direto na aplicação ', () => {
-        const Email = process.env.valid_USER_EMAIL;
-        const password = process.env.Valid_USER_PASSWORD;
-
-        test.only('login Valido com Email e Senha validos', async({page}) => {
+ 
+        test('login Valido com Email e Senha validos', async({page}) => {
             await loginPage.preencherEmailInput(Email)
             await loginPage.preencherSenhaInput(password)
             await loginPage.EntrarnacontaBtn.click()
-            await expect(page.getByText('Visão Geral', { exact: true })).toBeVisible()           
-
-
+            await expect(page.getByText('Visão Geral', { exact: true })).toBeVisible()  
         })
+
+        test('login Valido com email invalido', async() => {
+            await loginPage.preencherEmailInput(Emailinvalido)
+            await loginPage.preencherSenhaInput(password)
+            await loginPage.EntrarnacontaBtn.click()
+            loginPage.credenciasInvalidas.visible()
+        })
+
+        test('login Valido com senha invalida', async() => {
+            await loginPage.preencherEmailInput(Email);
+            await loginPage.preencherSenhaInput(passwordinvalido);
+            await loginPage.EntrarnacontaBtn.click();
+            loginPage.credenciasInvalidas.visible();
+        })   
         
     })
     
