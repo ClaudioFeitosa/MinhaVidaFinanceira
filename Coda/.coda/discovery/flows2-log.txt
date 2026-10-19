@@ -1,0 +1,49 @@
+
+--- NAV anchors scroll ---
+  Recursos -> scrollY=914
+  Família -> scrollY=2007
+  Planos -> scrollY=2747
+
+--- PREMIUM: click "Assinar Premium" ---
+  MSGS: []
+
+--- PLANS: click "Criar Conta Grátis" (plans section) ---
+  "Criar Conta Grátis" buttons on page: 0
+  ERR locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Criar Conta Grátis' }
+
+--- FOOTER: click "Cadastro" ---
+  ERR locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Cadastro' })[22m
+
+
+--- FOOTER: click "Login" ---
+  ERR locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Login', exact: true }
+
+--- HERO: click "Já tenho conta" ---
+  ERR locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Já tenho conta' }).fi
+
+--- FORGOT: open login, click "Esqueceu?" ---
+  MSGS: ["Dica: Verifique sua pasta de Spam ou Lixo Eletrônico caso o e-mail não chegue em 2 minutos."]
+  MSGS: ["Dica: Verifique sua pasta de Spam ou Lixo Eletrônico caso o e-mail não chegue em 2 minutos."]
+  NOTE: valid-email send skipped to avoid side effects
+
+--- FORGOT: click "Lembrei minha senha" (back) ---
+  H1 after back: "Entrar"
+
+--- AUTH: click "Voltar" (back to landing) ---
+  H1 after Voltar: "DOMINE\nSUAS FINANÇAS."
+
+--- BANNER: click "Fechar banner" ---
+  Banner still present: false
+  Banner present after reload: false
+
+--- MOBILE: 390x844 viewport ---
+  nav "Recursos" visible on mobile: false; hamburger buttons: 1
+  horizontal overflow: false

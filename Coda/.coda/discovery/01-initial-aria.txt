@@ -1,0 +1,169 @@
+- img
+- paragraph: Versão BetaEstamos em fase de testes — explore à vontade, seu feedback é muito bem-vindo! Em breve nossas redes sociais estarão no ar para você compartilhar sugestões e nos ajudar a melhorar.
+- button "Teste agora":
+  - img
+  - text: Teste agora
+- button "Fechar banner":
+  - img
+- navigation:
+  - img
+  - text: Minha Vida Financeira
+  - link "Recursos":
+    - /url: "#features"
+  - link "Família":
+    - /url: "#family"
+  - link "Planos":
+    - /url: "#plans"
+  - button "Entrar"
+  - button "Começar Grátis"
+- img
+- text: Gestão Financeira Inteligente
+- heading "Domine suas Finanças." [level=1]
+- paragraph: Dashboard inteligente para organizar receitas, gastos, investimentos e metas. Controle total — no celular ou no computador.
+- button "Criar Conta Grátis":
+  - text: Criar Conta Grátis
+  - img
+- button "Já tenho conta"
+- text: V M A J
+- img
+- img
+- img
+- img
+- img
+- paragraph: +10.000 famílias
+- img
+- text: 78 +R$ 8.500 -R$ 342 -R$ 55
+- img
+- paragraph: Poupança este mês
+- paragraph: R$ 2.140
+- img
+- paragraph: Score financeiro
+- paragraph: 78 · Bom
+- paragraph: 10k+
+- paragraph: Usuários ativos
+- paragraph: R$50M+
+- paragraph: Registrados no app
+- paragraph: 4.9 ★
+- paragraph: Avaliação média
+- paragraph: 100%
+- paragraph: Grátis para começar
+- text: Recursos
+- heading "Tudo o que você precisa para prosperar." [level=2]
+- paragraph: Ferramentas profissionais de gestão financeira, desenhadas para o dia a dia brasileiro.
+- img
+- heading "Score Financeiro" [level=3]
+- paragraph: Pontuação 0–100 calculada em 4 pilares para medir sua saúde financeira em tempo real.
+- img
+- heading "Projeção de Saldo" [level=3]
+- paragraph: Visualize sua situação financeira para 30, 60 e 90 dias com gráficos interativos.
+- img
+- heading "Metas Financeiras" [level=3]
+- paragraph: Defina objetivos claros e acompanhe cada centavo economizado rumo a eles.
+- img
+- heading "Análise Mensal" [level=3]
+- paragraph: Compare receitas, gastos e poupança mês a mês com insights gerados automaticamente.
+- img
+- heading "Cartão de Crédito" [level=3]
+- paragraph: Controle de fatura, limite e ciclo. Aviso visual ao atingir 75% do limite.
+- img
+- heading "Recorrências" [level=3]
+- paragraph: Automatize contas fixas e parcelas. O sistema lança no mês certo, sem esforço.
+- img
+- heading "Lembretes de Contas" [level=3]
+- paragraph: Alertas automáticos X dias antes do vencimento. Nunca mais pague multa.
+- img
+- heading "Gestão Familiar" [level=3]
+- paragraph: Visão consolidada para o responsável, privacidade individual para cada membro.
+- img
+- heading "Segurança Total" [level=3]
+- paragraph: Firebase Auth + Firestore com criptografia. Seus dados nunca ficam expostos.
+- text: V M
+- img
+- text: Foco na Família
+- heading "Finanças em Harmonia." [level=2]
+- paragraph: O administrador tem visão global consolidada, enquanto cada membro mantém privacidade e autonomia nos próprios lançamentos.
+- list:
+  - listitem:
+    - img
+    - text: Convites por e-mail em um clique
+  - listitem:
+    - img
+    - text: Visão consolidada para o responsável
+  - listitem:
+    - img
+    - text: Privacidade total para membros
+  - listitem:
+    - img
+    - text: Notificações de novos lançamentos
+  - listitem:
+    - img
+    - text: Alertas de limite por categoria
+- button "Experimentar Grátis":
+  - text: Experimentar Grátis
+  - img
+- text: Planos
+- heading "Comece de graça. Cresça sem limites." [level=2]
+- paragraph: Funcionalidades essenciais disponíveis a todos, sempre. Premium só quando fizer sentido.
+- paragraph: Lite
+- paragraph: R$ 9,90/mês
+- list:
+  - listitem:
+    - img
+    - text: Lançamentos ilimitados
+  - listitem:
+    - img
+    - text: Múltiplas contas
+  - listitem:
+    - img
+    - text: Score de saúde financeira
+  - listitem:
+    - img
+    - text: Lembretes de contas
+  - listitem:
+    - img
+    - text: Projeção de saldo 30/60/90d
+  - listitem:
+    - img
+    - text: Análise mensal comparativa
+  - listitem:
+    - img
+    - text: Controle de cartão de crédito
+  - listitem:
+    - img
+    - text: Parcelas em aberto
+- button "Criar Conta Grátis"
+- text: Popular
+- paragraph: Premium
+- paragraph: R$ 19,90/mês
+- list:
+  - listitem:
+    - img
+    - text: Módulo de Investimentos
+  - listitem:
+    - img
+    - text: Metas financeiras
+  - listitem:
+    - img
+    - text: Gestão familiar
+  - listitem:
+    - img
+    - text: Exportação de dados (CSV)
+  - listitem:
+    - img
+    - text: Sem anúncios
+  - listitem:
+    - img
+    - text: Dashboard personalizado (drag & drop)
+- button "Assinar Premium"
+- heading "Pronto para assumir o controle?" [level=2]
+- paragraph: Crie sua conta em menos de 2 minutos. Sem cartão de crédito, sem compromisso.
+- button "Criar Conta Grátis":
+  - text: Criar Conta Grátis
+  - img
+- button "Já tenho conta"
+- contentinfo:
+  - img
+  - text: Minha Vida Financeira
+  - paragraph: © 2026 Minha Vida Financeira. Todos os direitos reservados.
+  - button "Login"
+  - button "Cadastro"

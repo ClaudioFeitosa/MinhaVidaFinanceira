@@ -1,0 +1,69 @@
+- button "Minha Vida Financeira":
+  - img
+  - text: Minha Vida Financeira
+- paragraph: Comece de graça
+- heading "Sua jornada financeira começa aqui." [level=2]
+- paragraph: Controle total das suas finanças em menos de 2 minutos de cadastro. Sem cartão de crédito.
+- list:
+  - listitem:
+    - img
+    - paragraph: Score de saúde financeira
+    - paragraph: Pontuação inteligente em 4 pilares com dicas personalizadas.
+  - listitem:
+    - img
+    - paragraph: Metas e projeções
+    - paragraph: Visualize sua situação financeira 30, 60 e 90 dias à frente.
+  - listitem:
+    - img
+    - paragraph: Gestão familiar
+    - paragraph: Convide a família e tenha visão consolidada do orçamento.
+  - listitem:
+    - img
+    - paragraph: Segurança total
+    - paragraph: Firebase Auth com criptografia — seus dados sempre protegidos.
+- paragraph:
+  - text: Já tem uma conta?
+  - button "Entrar"
+- button "Voltar":
+  - img
+  - text: Voltar
+- heading "Criar conta" [level=1]
+- paragraph: Comece de graça — sem cartão de crédito.
+- button "Cadastrar com Google":
+  - img
+  - text: Cadastrar com Google
+- text: ou preencha os dados Nome Completo
+- img
+- textbox "João Silva": A
+- text: Nome de Usuário
+- img
+- textbox "joao.silva": a
+- text: CPF Opcional
+- img
+- textbox "000.000.000-00": "123"
+- text: E-mail
+- img
+- textbox "email@exemplo.com": x
+- text: Senha
+- img
+- textbox "••••••••": "123"
+- button:
+  - img
+- text: Fraca
+- img
+- text: 6+ chars
+- img
+- text: número
+- img
+- text: símbolo Confirmar Senha
+- img
+- textbox "Repita sua senha": "456"
+- img
+- button:
+  - img
+- paragraph: As senhas não coincidem
+- img
+- paragraph: O CPF deve conter 11 dígitos.
+- button "Criar minha conta":
+  - text: Criar minha conta
+  - img

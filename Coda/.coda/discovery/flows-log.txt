@@ -1,0 +1,159 @@
+
+--- STEP: BANNER: click "Teste agora" ---
+=== 02-banner-teste-agora ===
+URL: https://minha-vida-financeira-a16d2.web.app/
+Visible interactive: 13
+  [0] <button> "MINHA VIDA FINANCEIRA"
+  [1] <button> "Entrar"
+  [2] <button> "VOLTAR"
+  [3] <button type=button> "CADASTRAR COM GOOGLE"
+  [4] <input type=text ph="João Silva"> "João Silva"
+  [5] <input type=text ph="joao.silva"> "joao.silva"
+  [6] <input type=text ph="000.000.000-00"> "000.000.000-00"
+  [7] <input type=email ph="email@exemplo.com"> "email@exemplo.com"
+  [8] <input type=password ph="••••••••"> "••••••••"
+  [9] <button type=button> ""
+  [10] <input type=password ph="Repita sua senha"> "Repita sua senha"
+  [11] <button type=button> ""
+  [12] <button type=submit> "CRIAR MINHA CONTA"
+
+--- STEP: BANNER: click "Fechar banner" ---
+  ERROR: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Fechar banner' })[22m
+
+
+--- STEP: NAV: click RECURSOS (#features) ---
+  ERROR: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('link', { name: 'Recursos' })[22m
+
+
+--- STEP: NAV: click FAMÍLIA (#family) ---
+  ERROR: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('link', { name: 'Família' })[22m
+
+
+--- STEP: NAV: click PLANOS (#plans) ---
+  ERROR: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('link', { name: 'Planos' })[22m
+
+
+--- STEP: LOGIN: click "Entrar" (nav) ---
+=== 04-login-modal ===
+URL: https://minha-vida-financeira-a16d2.web.app/
+Visible interactive: 11
+  [0] <button> "MINHA VIDA FINANCEIRA"
+  [1] <button> "Criar conta grátis"
+  [2] <button> "VOLTAR"
+  [3] <input type=email ph="seu@email.com" required> "seu@email.com"
+  [4] <button type=button> "ESQUECEU?"
+  [5] <input type=password ph="••••••••" required> "••••••••"
+  [6] <button type=button> ""
+  [7] <input type=checkbox> "on"
+  [8] <button type=submit> "ENTRAR NA CONTA"
+  [9] <button type=button> "CONTINUAR COM GOOGLE"
+  [10] <button> "NOVO POR AQUI? CRIAR CONTA GRÁTIS"
+
+--- STEP: LOGIN: submit empty form ---
+  Validation messages found: ["E-MAIL","SENHA"]
+=== 05-login-empty-submit ===
+URL: https://minha-vida-financeira-a16d2.web.app/
+Visible interactive: 11
+  [0] <button> "MINHA VIDA FINANCEIRA"
+  [1] <button> "Criar conta grátis"
+  [2] <button> "VOLTAR"
+  [3] <input type=email ph="seu@email.com" required> "seu@email.com"
+  [4] <button type=button> "ESQUECEU?"
+  [5] <input type=password ph="••••••••" required> "••••••••"
+  [6] <button type=button> ""
+  [7] <input type=checkbox> "on"
+  [8] <button type=submit> "ENTRAR NA CONTA"
+  [9] <button type=button> "CONTINUAR COM GOOGLE"
+  [10] <button> "NOVO POR AQUI? CRIAR CONTA GRÁTIS"
+
+--- STEP: LOGIN: invalid email + short password ---
+  Validation messages found: ["E-MAIL","SENHA"]
+=== 06-login-invalid ===
+URL: https://minha-vida-financeira-a16d2.web.app/
+Visible interactive: 11
+  [0] <button> "MINHA VIDA FINANCEIRA"
+  [1] <button> "Criar conta grátis"
+  [2] <button> "VOLTAR"
+  [3] <input type=email ph="seu@email.com" required> "email-invalido"
+  [4] <button type=button> "ESQUECEU?"
+  [5] <input type=password ph="••••••••" required> "123"
+  [6] <button type=button> ""
+  [7] <input type=checkbox> "on"
+  [8] <button type=submit> "ENTRAR NA CONTA"
+  [9] <button type=button> "CONTINUAR COM GOOGLE"
+  [10] <button> "NOVO POR AQUI? CRIAR CONTA GRÁTIS"
+
+--- STEP: LOGIN: look for forgot-password link ---
+  Found forgot-password element: "ESQUECEU?"
+=== 07-login-forgot ===
+URL: https://minha-vida-financeira-a16d2.web.app/
+Visible interactive: 3
+  [0] <input type=email ph="seu@email.com" required> "seu@email.com"
+  [1] <button type=submit> "ENVIAR LINK DE RECUPERAÇÃO"
+  [2] <button> "LEMBREI MINHA SENHA"
+
+--- STEP: LOGIN: close modal (Esc / X) ---
+  Dialogs remaining: 0
+
+--- STEP: SIGNUP: click "Criar Conta Grátis" (hero) ---
+  ERROR: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Criar Conta Grátis' }).first()[22m
+
+
+--- STEP: SIGNUP: submit empty form ---
+  ERROR: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /criar|cadast|começar|assinar/i }).last()[22m
+
+
+--- STEP: SIGNUP: fill invalid data (short password, bad email) ---
+  Inputs in modal: 0
+  ERROR: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: /criar|cadast|começar|assinar/i }).last()[22m
+
+
+--- STEP: SIGNUP: check for terms checkbox / plan options ---
+  Checkboxes/switches in modal: 0
+  Plan mentions: []
+
+--- STEP: SIGNUP: close modal ---
+
+--- STEP: PREMIUM: click "Assinar Premium" (plans section) ---
+  ERROR: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Assinar Premium' })[22m
+
+
+--- STEP: PREMIUM: close modal ---
+
+--- STEP: FOOTER: click "Cadastro" (footer) ---
+  ERROR: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Cadastro' })[22m
+
+
+--- STEP: FOOTER: click "Login" (footer) ---
+  ERROR: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Login', exact: true })[22m
+
+
+--- STEP: HERO: click "Já tenho conta" ---
+  ERROR: locator.click: Timeout 5000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('button', { name: 'Já tenho conta' }).first()[22m
+
+
+CONSOLE ERRORS: [
+  "Failed to load resource: the server responded with a status of 400 ()"
+]

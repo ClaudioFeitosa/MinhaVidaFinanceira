@@ -1,0 +1,42 @@
+- button "Minha Vida Financeira":
+  - img
+  - text: Minha Vida Financeira
+- paragraph: Bem-vindo de volta
+- heading "Seu dinheiro te espera." [level=2]
+- paragraph: Acesse seu dashboard, acompanhe seu score e veja as projeções do mês.
+- img
+- paragraph: "78"
+- img
+- text: +R$ 8.500 -R$ 342 -R$ 55
+- paragraph:
+  - text: Novo por aqui?
+  - button "Criar conta grátis"
+- button "Voltar":
+  - img
+  - text: Voltar
+- heading "Entrar" [level=1]
+- paragraph: Acesse sua conta para continuar.
+- text: E-mail
+- img
+- textbox "seu@email.com": email-invalido
+- text: Senha
+- button "Esqueceu?"
+- img
+- textbox "••••••••": "123"
+- button:
+  - img
+- checkbox "Lembrar de mim" [checked]
+- img
+- text: Lembrar de mim
+- img
+- paragraph: Ocorreu um erro ao acessar sua conta. Tente novamente.
+- button "Entrar na conta":
+  - text: Entrar na conta
+  - img
+- text: ou
+- button "Continuar com Google":
+  - img
+  - text: Continuar com Google
+- button "Novo por aqui? Criar conta grátis"
+- img
+- text: Conexão criptografada

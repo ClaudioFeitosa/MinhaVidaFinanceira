@@ -1,0 +1,47 @@
+[
+  {
+    "idx": 0,
+    "tag": "input",
+    "role": null,
+    "id": null,
+    "testid": null,
+    "name": null,
+    "ariaLabel": null,
+    "type": "email",
+    "href": null,
+    "placeholder": "seu@email.com",
+    "required": true,
+    "text": "seu@email.com",
+    "visible": true
+  },
+  {
+    "idx": 1,
+    "tag": "button",
+    "role": null,
+    "id": null,
+    "testid": null,
+    "name": null,
+    "ariaLabel": null,
+    "type": "submit",
+    "href": null,
+    "placeholder": null,
+    "required": null,
+    "text": "ENVIAR LINK DE RECUPERAÇÃO",
+    "visible": true
+  },
+  {
+    "idx": 2,
+    "tag": "button",
+    "role": null,
+    "id": null,
+    "testid": null,
+    "name": null,
+    "ariaLabel": null,
+    "type": null,
+    "href": null,
+    "placeholder": null,
+    "required": null,
+    "text": "LEMBREI MINHA SENHA",
+    "visible": true
+  }
+]

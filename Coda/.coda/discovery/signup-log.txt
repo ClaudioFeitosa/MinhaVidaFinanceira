@@ -1,0 +1,17 @@
+
+--- OPEN SIGNUP via banner "Teste agora" ---
+
+--- SIGNUP empty submit ---
+  MSGS: ["Preencha todos os campos obrigatórios."]
+
+--- SIGNUP invalid (bad email, short pw, mismatch) ---
+  MSGS: ["As senhas não coincidem"]
+
+--- SIGNUP invalid CPF (123) ---
+  CPF field state: "CPF"
+
+--- SIGNUP password strength check ---
+  strength short: "SENHA" | strong: "SENHA"
+
+--- SIGNUP password visibility toggle ---
+  pw type before=password after=text

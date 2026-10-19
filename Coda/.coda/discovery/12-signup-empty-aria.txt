@@ -1,0 +1,61 @@
+- button "Minha Vida Financeira":
+  - img
+  - text: Minha Vida Financeira
+- paragraph: Comece de graça
+- heading "Sua jornada financeira começa aqui." [level=2]
+- paragraph: Controle total das suas finanças em menos de 2 minutos de cadastro. Sem cartão de crédito.
+- list:
+  - listitem:
+    - img
+    - paragraph: Score de saúde financeira
+    - paragraph: Pontuação inteligente em 4 pilares com dicas personalizadas.
+  - listitem:
+    - img
+    - paragraph: Metas e projeções
+    - paragraph: Visualize sua situação financeira 30, 60 e 90 dias à frente.
+  - listitem:
+    - img
+    - paragraph: Gestão familiar
+    - paragraph: Convide a família e tenha visão consolidada do orçamento.
+  - listitem:
+    - img
+    - paragraph: Segurança total
+    - paragraph: Firebase Auth com criptografia — seus dados sempre protegidos.
+- paragraph:
+  - text: Já tem uma conta?
+  - button "Entrar"
+- button "Voltar":
+  - img
+  - text: Voltar
+- heading "Criar conta" [level=1]
+- paragraph: Comece de graça — sem cartão de crédito.
+- button "Cadastrar com Google":
+  - img
+  - text: Cadastrar com Google
+- text: ou preencha os dados Nome Completo
+- img
+- textbox "João Silva"
+- text: Nome de Usuário
+- img
+- textbox "joao.silva"
+- text: CPF Opcional
+- img
+- textbox "000.000.000-00"
+- text: E-mail
+- img
+- textbox "email@exemplo.com"
+- text: Senha
+- img
+- textbox "••••••••"
+- button:
+  - img
+- text: Confirmar Senha
+- img
+- textbox "Repita sua senha"
+- button:
+  - img
+- img
+- paragraph: Preencha todos os campos obrigatórios.
+- button "Criar minha conta":
+  - text: Criar minha conta
+  - img

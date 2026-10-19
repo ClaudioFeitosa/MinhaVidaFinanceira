@@ -1,0 +1,16 @@
+- img
+- heading "Minha Vida" [level=1]
+- paragraph: Financeira
+- heading "Recuperar Acesso" [level=2]
+- paragraph: Redefinição de Credenciais
+- text: E-mail Cadastrado
+- img
+- textbox "seu@email.com"
+- img
+- paragraph: "Dica: Verifique sua pasta de Spam ou Lixo Eletrônico caso o e-mail não chegue em 2 minutos."
+- button "Enviar Link de Recuperação":
+  - text: Enviar Link de Recuperação
+  - img
+- button "Lembrei minha senha":
+  - img
+  - text: Lembrei minha senha

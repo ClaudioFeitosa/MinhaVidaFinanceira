@@ -1,0 +1,28 @@
+{
+  "title": "Minha Vida Financeira",
+  "finalUrl": "https://minha-vida-financeira-a16d2.web.app/",
+  "structure": {
+    "heads": [
+      "H1: DOMINE\nSUAS FINANÇAS.",
+      "H2: TUDO O QUE VOCÊ PRECISA\nPARA PROSPERAR.",
+      "H3: SCORE FINANCEIRO",
+      "H3: PROJEÇÃO DE SALDO",
+      "H3: METAS FINANCEIRAS",
+      "H3: ANÁLISE MENSAL",
+      "H3: CARTÃO DE CRÉDITO",
+      "H3: RECORRÊNCIAS",
+      "H3: LEMBRETES DE CONTAS",
+      "H3: GESTÃO FAMILIAR",
+      "H3: SEGURANÇA TOTAL",
+      "H2: FINANÇAS EM\nHARMONIA.",
+      "H2: COMECE DE GRAÇA.\nCRESÇA SEM LIMITES.",
+      "H2: PRONTO PARA\nASSUMIR O CONTROLE?"
+    ],
+    "navs": [
+      "nav: MINHA VIDA FINANCEIRA RECURSOS FAMÍLIA PLANOS ENTRAR COMEÇAR GRÁTIS",
+      "footer: MINHA VIDA FINANCEIRA © 2026 MINHA VIDA FINANCEIRA. TODOS OS DIREITOS RESERVADOS. LOGIN CADASTRO"
+    ],
+    "dialogs": []
+  },
+  "consoleErrors": []
+}
