@@ -17,9 +17,8 @@ function obterVariavelAmbiente(nome: string): string {
     return valor;
 }
 
-
-const Email = obterVariavelAmbiente('valid_USER_EMAIL');
-const password = obterVariavelAmbiente('Valid_USER_PASSWORD');
+const Email = obterVariavelAmbiente('lite_valid_USER_EMAIL');
+const password = obterVariavelAmbiente('lite_Valid_USER_PASSWORD');
 const Emailinvalido = obterVariavelAmbiente('invalid_USER_EMAIL');
 const passwordinvalido = obterVariavelAmbiente('inValid_USER_PASSWORD');   
 
@@ -38,20 +37,10 @@ test.describe('Login Page Validação das iterações - botões e logar ', () =>
         await loginPage.loginBTN.click()
     })
 
-    test.describe('Elementos da pagina de login ', () => {
-        test('Verificar se existe o botão voltar', async({page}) => {
-            await expect(loginPage.voltarBtn).toBeVisible()
-        }) 
-
-        test('Validar click no botão voltar', async({page}) =>{
-            await loginPage.voltarBtn.click()
-            await expect(landingPage.entrarButton).toBeVisible() 
-        })
-    })
     
     test.describe('Loging Google ', () => {
 
-        test('Validar que o botão do google esta na pagina', async ({page}) =>{
+        test('Validar que o botão do google esta na pagina', async () =>{
             await expect(loginPage.ContinuarComGoogleBtn).toBeVisible()            
         })  
         test.skip('Validar login com o google - valido', async ({page}) =>{

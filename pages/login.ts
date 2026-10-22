@@ -15,7 +15,8 @@ export class LoginPage  {
     readonly EntrarText : Locator;
     readonly EntrarTextAux : Locator;
     readonly emailLabel : Locator;
-    readonly senhaLabel: Locator;   
+    readonly senhaLabel: Locator;
+ 
 
 
       constructor(page : Page) {
@@ -80,6 +81,12 @@ export class LoginPage  {
 
     async preencherSenhaInput(password: string) {
         await this.senhaInput.fill(password)
+    }
+
+    async loginComSucesso(email: string, password: string) {
+        await this.emailInput.fill(email);
+        await this.senhaInput.fill(password);
+        await this.EntrarnacontaBtn.click()
     }
 
       // Acessa a Landing Page

@@ -35,12 +35,32 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+
     {
-      name: 'chromium',
+      name: 'setup',
+      testMatch: /auth\.setup\.ts/,
+    },
+
+    {
+      name: 'public',
+      testMatch: /landingPage|loginPage.spec\.spec\.ts/,   
       use: { ...devices['Desktop Chrome'],
-      headless: false },
       locale: 'pt-BR',
+      headless: false },
     }, 
+
+    {
+    name: 'logado',
+    dependencies: ['setup'],
+    testIgnore: /landingPage\.spec\.ts/,
+    use: { ...devices['Desktop Chrome'],
+    storageState: 'playwright/.auth/user.json',
+    locale: 'pt-BR',
+    headless: false },
+  }, 
+
+
+  
 
     // {
     //   name: 'firefox',

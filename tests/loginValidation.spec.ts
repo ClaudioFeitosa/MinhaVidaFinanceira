@@ -9,8 +9,6 @@ test.describe('login page - Validação dos textos e labels  ', () => {
     test.beforeEach(async ({page}) => {
         landingPage = new LandingPage(page);
         loginPage = new LoginPage(page);
-
-        loginPage = new LoginPage(page);
         await loginPage.open()
         await loginPage.loginBTN.click()
     })
