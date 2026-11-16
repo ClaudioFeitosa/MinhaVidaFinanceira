@@ -43,7 +43,7 @@ export default defineConfig({
 
     {
       name: 'public',
-      testMatch: /landingPage|loginPage.spec\.spec\.ts/,   
+      testMatch: /landingPage|loginPage|loginValidation\.spec\.ts/,   
       use: { ...devices['Desktop Chrome'],
       locale: 'pt-BR',
       headless: false },
@@ -52,7 +52,7 @@ export default defineConfig({
     {
     name: 'logado',
     dependencies: ['setup'],
-    testIgnore: /landingPage\.spec\.ts/,
+    testIgnore: /landingPage|loginPage|loginValidation\.spec\.ts/, 
     use: { ...devices['Desktop Chrome'],
     storageState: 'playwright/.auth/user.json',
     locale: 'pt-BR',

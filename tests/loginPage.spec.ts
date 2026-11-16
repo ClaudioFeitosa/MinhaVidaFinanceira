@@ -84,6 +84,8 @@ test.describe('Login Page Validação das iterações - botões e logar ', () =>
             await loginPage.EntrarnacontaBtn.click();
             loginPage.credenciasInvalidas.visible();
         })   
+
+        /// incluir os testes para os elemnetos da laterial esquerda
         
     })
     
